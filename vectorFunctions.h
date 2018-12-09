@@ -37,3 +37,6 @@ double distance(vector<double> &vec1, vector<double> &vec2);
 
 /* the Euclidean norm of a vector (distance from tail to tip) */
 double magnitude(vector<double> &vec);
+
+/* the cosine similarity of two vectors */
+double cosineSimilarity(vector<double> &vec1, vector<double> &vec2);

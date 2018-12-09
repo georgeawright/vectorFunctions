@@ -69,3 +69,10 @@ double magnitude(vector<double> &vec) {
   double total = sum(squared);
   return sqrt(total);
 }
+
+double cosineSimilarity(vector<double> &vec1, vector<double> &vec2) {
+  double dot_product = dot(vec1, vec2);
+  double magnitude1 = magnitude(vec1);
+  double magnitude2 = magnitude(vec2);
+  return dot_product / (magnitude1 * magnitude2);
+}

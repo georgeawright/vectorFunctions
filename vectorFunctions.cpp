@@ -60,19 +60,14 @@ double distance(vector<double> &vec1, vector<double> &vec2) {
   assert(vec1.size() == vec2.size());
   vector<double> added = add(vec1, vec2);
   vector<double> squared = squareEach(added);
-  double total = sum(squared);
-  return sqrt(total);
+  return sqrt(sum(squared));
 }
 
 double magnitude(vector<double> &vec) {
   vector<double> squared = squareEach(vec);
-  double total = sum(squared);
-  return sqrt(total);
+  return sqrt(sum(squared));
 }
 
 double cosineSimilarity(vector<double> &vec1, vector<double> &vec2) {
-  double dot_product = dot(vec1, vec2);
-  double magnitude1 = magnitude(vec1);
-  double magnitude2 = magnitude(vec2);
-  return dot_product / (magnitude1 * magnitude2);
+  return dot(vec1, vec2) / (magnitude(vec1) * magnitude(vec2));
 }

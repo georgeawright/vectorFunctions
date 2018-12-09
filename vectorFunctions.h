@@ -34,3 +34,6 @@ double sum(vector<double> &vec);
 
 /* the distance between two vectors of equal length */
 double distance(vector<double> &vec1, vector<double> &vec2);
+
+/* the Euclidean norm of a vector (distance from tail to tip) */
+double magnitude(vector<double> &vec);

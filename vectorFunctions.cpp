@@ -63,3 +63,9 @@ double distance(vector<double> &vec1, vector<double> &vec2) {
   double total = sum(squared);
   return sqrt(total);
 }
+
+double magnitude(vector<double> &vec) {
+  vector<double> squared = squareEach(vec);
+  double total = sum(squared);
+  return sqrt(total);
+}

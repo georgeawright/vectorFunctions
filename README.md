@@ -1,5 +1,5 @@
 # vectorFunctions
 some useful functions for C++ STL vectors
 
-#include"vectorFunctions"
-using namespace std;
+`#include"vectorFunctions"
+using namespace std;`
